@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Favorite-Blablob!",
+    "description": "Blablob tri vos favories !",
+    "version": "1.0",
+    "browser_action": {
+        "default_popup": "front/hello.html",
+        "default_icon": "images/blablu.png"
+    },
+    "background": {
+        "scripts": ["scripts/background.js"]
+    },
+    "permissions": [
+        "bookmarks",
+        "http://127.0.0.1:11434/*"
+    ]
+}
