@@ -42,6 +42,7 @@ Favorite-Blablob! est une extension pour navigateur qui aide à organiser vos fa
 
 ## Contributeurs
 
-- **Auteur** : Maxime Dussort
+- Maxime Dussort
+- Samuel Ressiot
 
 ![Logo de Favorite-Blablob](firefox/images/blablu.png)
