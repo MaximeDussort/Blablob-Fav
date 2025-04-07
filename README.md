@@ -15,6 +15,7 @@ Favorite-Blablob! est une extension pour navigateur qui aide à organiser vos fa
 
 ## Description des fichiers
 
+### Dans le fichier Firefox
 - **`manifest.json`** : Fichier de configuration de l'extension, définissant les permissions, les scripts de fond et l'interface utilisateur.
 - **`front/hello.html`** : Fichier HTML affiché dans la popup de l'extension.
 - **`images/blablu.png`** et **`images/blablu.ico`** : Ressources graphiques utilisées dans l'extension.
@@ -42,4 +43,4 @@ Favorite-Blablob! est une extension pour navigateur qui aide à organiser vos fa
 ## Contributeurs
 
 - **Auteur** : Maxime Dussort
-![Logo de Favorite-Blablob](images/blablu.png)
+![Logo de Favorite-Blablob](firefox/images/blablu.png)
