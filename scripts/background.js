@@ -2,16 +2,25 @@ let isProcessing = false;
 
 async function ask_llm(bookmark, existingFolders) {
     const prompt = `
-    Tu es une IA spécialisée dans l'organisation des bookmarks.
-    Ta tâche est de classer le bookmark suivant : 
+    Tu es une intelligence artificielle spécialisée dans l'organisation des bookmarks (favoris).
+    Ta mission est de classer le bookmark suivant dans une catégorie appropriée :
     - Titre : "${bookmark.title}"
     - URL : "${bookmark.url}"
-    
-    Utilise des mots de catégories courants comme "Loisirs", "Travail", "Informatique", "Voyages", etc.
+
     Voici la liste des catégories existantes : "${existingFolders.join('", "')}".
-    
-    Réponds uniquement avec un mot clair et précis correspondant à la catégorie la plus appropriée pour ce bookmark, sans ponctuation.
-    `;
+
+    Si aucune catégorie existante ne convient, crée une nouvelle catégorie. 
+    Les nouvelles catégories doivent respecter les règles suivantes :
+    - Le nom doit être clair, précis et représenter une catégorie logique.
+    - Le nom ne doit SURTOUT PAS être "Blog", "Tags", "Étiquette", "Menu des Marque-Pages", "Favoris" ou encore "Marque-Pages".
+    - Le nom ne doit pas être trop long (maximum 2 mots).
+    - Le nom ne doit pas être un acronyme ou une abréviation.
+    - Le nom ne doit pas être un nom propre ou une marque déposée.
+    - Le nom ne doit pas être un verbe ou une action.
+    - Le nom ne doit pas être un adjectif ou une description.
+
+    Réponds uniquement avec un mot correspondant au nom de la catégorie la plus appropriée, sans ponctuation ni texte supplémentaire.
+`;
     //console.log(prompt);
     return await fetch('http://127.0.0.1:11434/api/generate', {
         method: 'POST',
