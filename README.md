@@ -38,7 +38,7 @@ Favorite-Blablob! est une extension pour navigateur qui aide à organiser vos fa
 
 ## Dépendances
 
-- Un serveur local doit être en cours d'exécution à l'adresse `http://127.0.0.1:11434` pour fournir les réponses de l'IA.
+- Un serveur local doit être en cours d'exécution à l'adresse `http://127.0.0.1:11434` pour fournir les réponses de l'IA (Fonctionne sous `llama3.2:3b`).
 
 ## Contributeurs
 
