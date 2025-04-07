@@ -28,7 +28,7 @@ Favorite-Blablob! est une extension pour navigateur qui aide à organiser vos fa
 1. Clonez ce dépôt sur votre machine locale.
 2. Ouvrez votre navigateur et accédez à la page de gestion des extensions.
 3. Activez le mode développeur.
-4. Chargez l'extension en sélectionnant le dossier contenant ce projet.
+4. Chargez l'extension en sélectionnant le manifest contenant ce projet.
 
 ## Utilisation
 
@@ -43,4 +43,5 @@ Favorite-Blablob! est une extension pour navigateur qui aide à organiser vos fa
 ## Contributeurs
 
 - **Auteur** : Maxime Dussort
+
 ![Logo de Favorite-Blablob](firefox/images/blablu.png)
